@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1C-Gi-fZB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-Jo-5Xx" userLabel="conView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="590"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OE0-ft-4sD">
+                                                <rect key="frame" x="58" y="30" width="204" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="2dN-hh-RxV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="slideChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="nGU-V1-zz2"/>
+                                                </connections>
+                                            </slider>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-hi-V5t" customClass="JWLineProgressView">
+                                                <rect key="frame" x="30" y="300" width="260" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0Xc-2m-cwe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2N-YU-WJs" customClass="JWSlide">
+                                                <rect key="frame" x="60" y="360" width="200" height="200"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="7bf-nn-fmj"/>
+                                                    <constraint firstAttribute="width" secondItem="j2N-YU-WJs" secondAttribute="height" multiplier="1:1" id="uvY-Ea-ZeC"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpW-8f-fU4" customClass="JWCircleView">
+                                                <rect key="frame" x="60" y="80" width="200" height="200"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="ADT-2c-TlX"/>
+                                                    <constraint firstAttribute="width" secondItem="rpW-8f-fU4" secondAttribute="height" multiplier="1:1" id="I3N-lN-a1C"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="rpW-8f-fU4" firstAttribute="top" secondItem="OE0-ft-4sD" secondAttribute="bottom" constant="20" id="B36-y8-m1o"/>
+                                            <constraint firstAttribute="centerX" secondItem="J2A-hi-V5t" secondAttribute="centerX" id="DGY-ad-Wcj"/>
+                                            <constraint firstAttribute="centerX" secondItem="OE0-ft-4sD" secondAttribute="centerX" id="I5r-jt-hLU"/>
+                                            <constraint firstAttribute="centerX" secondItem="j2N-YU-WJs" secondAttribute="centerX" id="OZV-5n-cgw"/>
+                                            <constraint firstItem="J2A-hi-V5t" firstAttribute="leading" secondItem="qsK-Jo-5Xx" secondAttribute="leading" constant="30" id="VwK-2d-Pgy"/>
+                                            <constraint firstItem="OE0-ft-4sD" firstAttribute="top" secondItem="qsK-Jo-5Xx" secondAttribute="top" constant="30" id="eK0-jh-5PI"/>
+                                            <constraint firstAttribute="bottom" secondItem="j2N-YU-WJs" secondAttribute="bottom" constant="30" id="lMc-pF-KET"/>
+                                            <constraint firstAttribute="centerX" secondItem="rpW-8f-fU4" secondAttribute="centerX" id="pF4-pp-556"/>
+                                            <constraint firstItem="j2N-YU-WJs" firstAttribute="top" secondItem="J2A-hi-V5t" secondAttribute="bottom" constant="20" id="wNp-x2-kt9"/>
+                                            <constraint firstItem="J2A-hi-V5t" firstAttribute="top" secondItem="rpW-8f-fU4" secondAttribute="bottom" constant="20" id="xBi-iO-cgt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="qsK-Jo-5Xx" secondAttribute="centerX" id="JI6-vd-MO0"/>
+                                    <constraint firstItem="qsK-Jo-5Xx" firstAttribute="top" secondItem="C1C-Gi-fZB" secondAttribute="top" id="JVR-Df-hst"/>
+                                    <constraint firstAttribute="trailing" secondItem="qsK-Jo-5Xx" secondAttribute="trailing" id="hRl-Ai-acc"/>
+                                    <constraint firstAttribute="bottom" secondItem="qsK-Jo-5Xx" secondAttribute="bottom" id="s33-dG-R3N"/>
+                                    <constraint firstItem="qsK-Jo-5Xx" firstAttribute="leading" secondItem="C1C-Gi-fZB" secondAttribute="leading" id="w58-p5-PWf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C1C-Gi-fZB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="B7O-6e-0YA"/>
+                            <constraint firstItem="C1C-Gi-fZB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="CZc-2c-NLv"/>
+                            <constraint firstAttribute="trailing" secondItem="C1C-Gi-fZB" secondAttribute="trailing" id="FXI-Bk-KXE"/>
+                            <constraint firstAttribute="bottom" secondItem="C1C-Gi-fZB" secondAttribute="bottom" id="QXE-zE-Krv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="circleView" destination="rpW-8f-fU4" id="6te-pf-xrm"/>
+                        <outlet property="doubleSlide" destination="j2N-YU-WJs" id="gZT-uF-G3i"/>
+                        <outlet property="lineView" destination="J2A-hi-V5t" id="gUO-6n-E1L"/>
+                        <outlet property="slide" destination="OE0-ft-4sD" id="aMI-3L-V0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="290"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55221E9B-EA1F-4B2C-8139-FC4AF06AD4BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JWViewDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>65C7D00E37A74F315F2B57D9ECDADAC131709508</key>
+		<string>https://github.com/zjw7sky/JWView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JWViewDemo/JWViewDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>65C7D00E37A74F315F2B57D9ECDADAC131709508</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zjw7sky/JWView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>65C7D00E37A74F315F2B57D9ECDADAC131709508</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>65C7D00E37A74F315F2B57D9ECDADAC131709508</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JWView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
